@@ -15,7 +15,8 @@ apt-get install unzip -y
 
 echo "Baixando aplicação..."
 
-wget -P /tmp/ https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
+cd /tmp/
+wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
 unzip main.zip
 cd linux-site-dio-main
 
@@ -24,6 +25,7 @@ cp -R * /var/www/html
 
 echo "Subindo para o GITHUB..."
 
+cd /projeto2/
 git init
 git add .
 git commit -m "Arquivo Projeto2"
